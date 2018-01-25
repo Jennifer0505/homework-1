@@ -47,8 +47,7 @@ yVec[c(2:250)] - xVec[c(1:249)]
 #(c)
 (xVec[c(1:248)]+2*xVec[c(2:249)]-xVec[c(3:250)])
 #(d)
-r<-c(1:249)
-sum(exp(-xVec[r+1])/xVec[r]+10)
+sum(exp(-xVec[-1])/(xVec[-length(xVec)]+10))
 #7
 #(a)
 yVec[yVec>600]
